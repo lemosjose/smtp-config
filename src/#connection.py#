@@ -1,0 +1,12 @@
+
+# This Python file uses the following encoding: utf-8
+
+import os
+
+class connection:
+    def __init__(self, self.user, self.passwd):
+        usuario =
+        senha =
+
+    def createConnection():
+
