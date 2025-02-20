@@ -15,15 +15,26 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QAbstractButton, QApplication, QDialogButtonBox, QLabel,
-    QPlainTextEdit, QSizePolicy, QTabWidget, QTextEdit,
-    QWidget)
+from PySide6.QtWidgets import (QApplication, QLabel, QPlainTextEdit, QPushButton,
+    QSizePolicy, QTabWidget, QTextEdit, QWidget)
 
 class Ui_Widget(object):
     def setupUi(self, Widget):
         if not Widget.objectName():
             Widget.setObjectName(u"Widget")
-        Widget.resize(598, 661)
+        Widget.resize(598, 718)
+        self.pushButton = QPushButton(Widget)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setGeometry(QRect(10, 630, 111, 26))
+        self.pushButton_2 = QPushButton(Widget)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setGeometry(QRect(140, 630, 151, 26))
+        self.pushButton_3 = QPushButton(Widget)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setGeometry(QRect(310, 630, 191, 26))
+        self.pushButton_4 = QPushButton(Widget)
+        self.pushButton_4.setObjectName(u"pushButton_4")
+        self.pushButton_4.setGeometry(QRect(10, 670, 211, 26))
         self.textEdit_7 = QTextEdit(Widget)
         self.textEdit_7.setObjectName(u"textEdit_7")
         self.textEdit_7.setGeometry(QRect(10, 330, 439, 21))
@@ -52,10 +63,6 @@ class Ui_Widget(object):
         self.textEdit_2 = QTextEdit(Widget)
         self.textEdit_2.setObjectName(u"textEdit_2")
         self.textEdit_2.setGeometry(QRect(10, 140, 439, 21))
-        self.buttonBox = QDialogButtonBox(Widget)
-        self.buttonBox.setObjectName(u"buttonBox")
-        self.buttonBox.setGeometry(QRect(280, 630, 166, 26))
-        self.buttonBox.setStandardButtons(QDialogButtonBox.StandardButton.Cancel|QDialogButtonBox.StandardButton.Ok)
         self.textEdit_4 = QTextEdit(Widget)
         self.textEdit_4.setObjectName(u"textEdit_4")
         self.textEdit_4.setGeometry(QRect(10, 470, 441, 21))
@@ -122,6 +129,10 @@ class Ui_Widget(object):
 
     def retranslateUi(self, Widget):
         Widget.setWindowTitle(QCoreApplication.translate("Widget", u"Widget", None))
+        self.pushButton.setText(QCoreApplication.translate("Widget", u"Conectar \u00e0 VPS", None))
+        self.pushButton_2.setText(QCoreApplication.translate("Widget", u"Criar Usuario do SMTP", None))
+        self.pushButton_3.setText(QCoreApplication.translate("Widget", u"Configurar o Servi\u00e7o SMTP ", None))
+        self.pushButton_4.setText(QCoreApplication.translate("Widget", u"Obter registros do Dominio", None))
         self.label_4.setText(QCoreApplication.translate("Widget", u"Porta SSH utilizada", None))
         self.label_7.setText(QCoreApplication.translate("Widget", u"Dominio/Subdominio", None))
         self.label_8.setText(QCoreApplication.translate("Widget", u"Output dos Comandos", None))
